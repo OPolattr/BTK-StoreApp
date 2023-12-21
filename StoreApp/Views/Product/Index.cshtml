@@ -1,6 +1,4 @@
-
 @model List<Product>
-
 @section Footer
 {
     <div>
@@ -8,10 +6,10 @@
         <b>Pınar aşkımın hayatamın anlamı.</b>
     </div>
 }
-    
 
-
+<div class="row my-3 mx-4 ">
 @foreach (Product prd in Model)
 {
     <partial name="_ProductCard" model="@prd"/>
 }
+</div>
